@@ -11,6 +11,7 @@ import streamlit as st
 from annotated_text import annotated_text, parameters
 from streamlit_extras import add_vertical_space as avs
 from streamlit_extras.badges import badge
+st.cache_data.clear()
 
 from scripts.similarity.get_score import *
 from scripts.utils import get_filenames_from_dir
