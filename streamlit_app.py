@@ -11,28 +11,15 @@ import streamlit as st
 from annotated_text import annotated_text, parameters
 from streamlit_extras import add_vertical_space as avs
 from streamlit_extras.badges import badge
-st.cache_data.clear()
+
 
 from scripts.similarity.get_score import *
 from scripts.utils import get_filenames_from_dir
 from scripts.utils.logger import init_logging_config
 
-import streamlit as st
 
-hide_sidebar_style = """
-    <style>
-        [data-testid="stSidebar"] {
-            display: none;
-        }
-        [data-testid="stSidebarNav"] {
-            display: none;
-        }
-        .css-1d391kg {  /* Old sidebar padding */
-            display: none;
-        }
-    </style>
-"""
-st.markdown(hide_sidebar_style, unsafe_allow_html=True)
+
+
 
 
 # Set page configuration
