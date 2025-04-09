@@ -17,6 +17,8 @@ from scripts.similarity.get_score import *
 from scripts.utils import get_filenames_from_dir
 from scripts.utils.logger import init_logging_config
 
+st.write("📁 Running file:", os.path.basename(__file__))
+
 
 
 
