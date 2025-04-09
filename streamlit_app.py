@@ -173,8 +173,7 @@ def tokenize_string(input_string):
 st.title(":blue[Resume Matcher]")
 
 
-st.divider()
-avs.add_vertical_space(1)
+
 
 resume_names = get_filenames_from_dir("Data/Processed/Resumes")
 
